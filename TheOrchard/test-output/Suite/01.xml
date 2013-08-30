@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite hostname="vnvpc130" name="Login.Grid_Login" tests="1" failures="0" timestamp="6 Jul 2012 13:47:52 GMT" time="34.359" errors="0">
+  <testcase name="@BeforeClass beforeClass" time="0.0" classname="Login.Grid_Login">
+    <failure type="com.thoughtworks.selenium.SeleniumException" message="Timed out after 30000ms">
+      <![CDATA[com.thoughtworks.selenium.SeleniumException: Timed out after 30000ms
+	at com.thoughtworks.selenium.HttpCommandProcessor.throwAssertionFailureExceptionOrError(HttpCommandProcessor.java:112)
+	at com.thoughtworks.selenium.HttpCommandProcessor.doCommand(HttpCommandProcessor.java:106)
+	at com.thoughtworks.selenium.DefaultSelenium.open(DefaultSelenium.java:362)
+	at Login.Grid_Login.beforeClass(Grid_Login.java:25)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+... Removed 17 stack frames]]>
+    </failure>
+  </testcase>
+  <testcase name="@AfterClass afterClass" time="0.0" classname="Login.Grid_Login">
+    <skipped/>
+  </testcase>
+  <testcase name="testGoogleSearch" time="0.0" classname="Login.Grid_Login">
+    <skipped/>
+  </testcase>
+</testsuite>

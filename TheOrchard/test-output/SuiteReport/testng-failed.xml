@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [SuiteReport]" parallel="none">
+  <listeners>
+    <listener class-name="org.uncommons.reportng.HTMLReporter"/>
+  </listeners>
+  <test name="SendReport(failed)" parallel="none" preserve-order="false">
+    <classes>
+      <class name="testSuite.SendMail_Testeg">
+        <methods>
+          <include name="sendMail"/>
+        </methods>
+      </class>
+    </classes>
+  </test>
+</suite>

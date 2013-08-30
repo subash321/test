@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite hostname="vnvpc130" name="RB_Release.Grid_DeleteRelease" tests="1" failures="0" timestamp="4 Jul 2012 15:45:19 GMT" time="120.43" errors="0">
+  <testcase name="@BeforeClass beforeClass" time="0.0" classname="RB_Release.Grid_DeleteRelease">
+    <failure type="java.lang.RuntimeException" message="Could not contact Selenium Server; have you started it on &amp;apos;localhost:5554&amp;apos; ?
+Read more at http://seleniumhq.org/projects/remote-control/not-started.html
+Connection refused: connect">
+      <![CDATA[java.lang.RuntimeException: Could not contact Selenium Server; have you started it on 'localhost:5554' ?
+Read more at http://seleniumhq.org/projects/remote-control/not-started.html
+Connection refused: connect
+	at com.thoughtworks.selenium.DefaultSelenium.start(DefaultSelenium.java:102)
+	at RB_Release.Grid_DeleteRelease.beforeClass(Grid_DeleteRelease.java:24)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+... Removed 17 stack frames]]>
+    </failure>
+  </testcase>
+  <testcase name="@AfterClass afterClass" time="0.0" classname="RB_Release.Grid_DeleteRelease">
+    <skipped/>
+  </testcase>
+  <testcase name="testGoogleSearch" time="0.0" classname="RB_Release.Grid_DeleteRelease">
+    <skipped/>
+  </testcase>
+</testsuite>

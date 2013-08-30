@@ -1,0 +1,65 @@
+<project name="TheOrchard" default="clean" basedir=".">
+	  <property name="UserLibrary.dir" value="UserLibrary" /> 
+	  <property name="build.dir" value="build" /> 
+	  <property file="build.properties" />
+	  <property name="build.properties" value="build.properties" />
+	
+	<!-- Clean Build-->
+	
+	<target name="clean" description="Clean output directories">
+		  <delete dir="build"/> 
+	</target>
+	
+		   <!-- COMPILE TESTS-->
+	 	       
+		   <target name="compile">
+		    <path id="classpath">
+		   	  <fileset dir="${UserLibrary.dir}" includes="*.jar" /> 
+		    	
+		    	<pathelement path="${build.dir}/classes" />
+		   	 	  </path>
+		   	
+		      <echo message="compiling tests"/>
+		      	
+		      <mkdir dir="${build.dir}/classes"/>
+		      	
+		      <javac   debug="true"
+		      	   	includeantruntime="false" 
+		         source="1.7" classpathref="classpath"
+		         srcdir="src" destdir="${build.dir}/classes"/>
+		   	<copy todir="${build.dir}/classes">
+		   	<fileset file="build.properties"/>
+		   	</copy>
+		   </target>
+	
+	<!-- RUN TESTS-->
+	
+	   <target name="run" depends="compile">
+	   		   	<taskdef name="testng"
+	   		   	classname="com.beust.testng.TestNGAntTask">
+	   		     <classpath refId="classpath"/>
+	   		   </taskdef>
+	   	<path id="runpath">
+	   		      <path refid="classpath"/>	   		
+	   		</path>
+	   	
+	      <echo message="running tests"/>
+	      <testng  classpathref="runpath" outputDir="test-output">
+	      	 <!-- 
+	      	 <xmlfileset dir="." includes="Grid_RB_ArtistCataloguetestng_test01.xml"/>
+			<xmlfileset dir="." includes="Grid_RB_ArtistCataloguetestng_test02.xml"/>
+			<xmlfileset dir="." includes="Grid_RB_ArtistCataloguetestng_test03.xml"/>
+	      	<xmlfileset dir="." includes="Grid_RB_ReleaseArtist_testng_test01.xml"/>
+	      	<xmlfileset dir="." includes="Grid_RB_ReleaseCopytestng_test01.xml"/>
+			<xmlfileset dir="." includes="Grid_RB_Releasetestng_test01.xml"/>
+	      	<xmlfileset dir="." includes="Grid_RB_Releasetestng_test02.xml"/>
+	      	<xmlfileset dir="." includes="Grid_RB_Releasetestng_test03.xml"/>
+	      	<xmlfileset dir="." includes="Grid_RB_Tracktestng_test01.xml"/>
+	      	<xmlfileset dir="." includes="testngmail.xml"/>
+	      	  	-->
+	      	<xmlfileset dir="." includes="IT_Edit_Release.xml"/>
+	      	</testng>	
+	       
+	   	</target>
+
+	   </project>

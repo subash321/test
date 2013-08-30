@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="TestSuite" parallel="none">
+        <test name="IT_Edit_Release.Grid_Edit_Release/5559/iehta">
+     <listeners>  
+<listener class-name="org.uncommons.reportng.HTMLReporter"></listener>  
+</listeners>
+        <parameter name="selenium.host" value="localhost"></parameter>
+        <parameter name="selenium.port" value="5559"></parameter>
+        <parameter name="selenium.browser" value="*iehta"></parameter>
+        <parameter name="selenium.url" value="http://trunk.synergy.theorchard.com"></parameter>
+        <parameter name="searchCriteria" value="SeleniumGrid_01"></parameter>
+        <classes>
+            <class name="IT_Edit_Release.Grid_Edit_Release"/>
+        </classes>
+    </test>
+            <test name="IT_YouTube.Grid_EditContracts/5556/iehta">
+     <listeners>  
+<listener class-name="org.uncommons.reportng.HTMLReporter"></listener>  
+</listeners>
+        <parameter name="selenium.host" value="localhost"></parameter>
+        <parameter name="selenium.port" value="5561"></parameter>
+        <parameter name="selenium.browser" value="*iehta"></parameter>
+        <parameter name="selenium.url" value="http://trunk.synergy.theorchard.com"></parameter>
+        <parameter name="searchCriteria" value="SeleniumGrid_01"></parameter>
+        <classes>
+            <class name="IT_YouTube.Grid_EditContracts"/>
+        </classes>
+    </test>
+            <test name="RB_Release.Grid_DeleteRelease/5560/iehta">
+     <listeners>  
+<listener class-name="org.uncommons.reportng.HTMLReporter"></listener>  
+</listeners>
+        <parameter name="selenium.host" value="localhost"></parameter>
+        <parameter name="selenium.port" value="5560"></parameter>
+        <parameter name="selenium.browser" value="*iehta"></parameter>
+        <parameter name="selenium.url" value="http://trunk.synergy.theorchard.com"></parameter>
+        <parameter name="searchCriteria" value="SeleniumGrid_01"></parameter>
+        <classes>
+            <class name="IT_Vendor.Grid_EditVendor"/>
+        </classes>
+    </test>
+    <test name="01">
+     <listeners>  
+<listener class-name="org.uncommons.reportng.HTMLReporter"></listener>  
+</listeners>
+        <parameter name="selenium.host" value="localhost"></parameter>
+        <parameter name="selenium.port" value="5551"></parameter>
+        <parameter name="selenium.browser" value="*iehta"></parameter>
+        <parameter name="selenium.url" value="http://trunk.synergy.theorchard.com"></parameter>
+        <parameter name="searchCriteria" value="SeleniumGrid_01"></parameter>
+        <classes>
+            <class name="Login.Grid_Login"/>
+        </classes>
+    </test>
+    <test name="02">
+     <listeners>  
+<listener class-name="org.uncommons.reportng.HTMLReporter"></listener>  
+</listeners>
+        <parameter name="selenium.host" value="localhost"></parameter>
+        <parameter name="selenium.port" value="5552"></parameter>
+        <parameter name="selenium.browser" value="*iehta"></parameter>
+        <parameter name="selenium.url" value="http://trunk.synergy.theorchard.com"></parameter>
+        <parameter name="searchCriteria" value="SeleniumGrid_02"></parameter>
+        <classes>
+            <class name="Login.Grid_LoginVerification"/>
+        </classes>
+    </test> 
+</suite>

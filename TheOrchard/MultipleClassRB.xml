@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="TestSuite" parallel="none">
+  <test name="Test" preserve-order="true">
+     <listeners>  
+<listener class-name="org.uncommons.reportng.HTMLReporter"></listener>  
+</listeners>
+    <classes>
+    <class name="RB_ArtistCatalogue.AddArtist"/>
+    <class name="RB_ArtistCatalogue.DeleteArtist"/>  
+    <class name="RB_ArtistCatalogue.EditArtist"/> 
+    <class name="RB_CopyRelease.CopyRelease"/>
+     <class name="RB_Release.CreateRelease"/> 
+     <class name="RB_Release.DeleteRelease"/>            
+     <class name="RB_ReleaseArtist.CreateArtistFromAudioRelease"/> 
+      </classes>
+  </test>
+</suite>

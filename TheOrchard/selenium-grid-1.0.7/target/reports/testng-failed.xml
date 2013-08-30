@@ -1,0 +1,14 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="10" skipfailedinvocationCounts="false" verbose="1" name="Failed suite [Selenium Grid Demo In Parallel For Multiple Environments]" junit="false" parallel="methods" annotations="JDK">
+  <test name="Command line test(failed)" junit="false" parallel="methods" annotations="JDK">
+    <classes>
+      <class name="com.thoughtworks.selenium.grid.demo.WebTestInvolvingMultiEnvironments">
+        <methods>
+          <include name="testForFirstEnvironment"/>
+          <include name="testForSecondEnvironment"/>
+          <include name="testForThirdEnvironment"/>
+        </methods>
+      </class>
+    </classes>
+  </test>
+</suite>

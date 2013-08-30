@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite hostname="vnvpc130" name="com.qaselenium.CopyOfNewTest" tests="1" failures="0" timestamp="26 Jun 2012 13:02:04 GMT" time="21.098" errors="0">
+  <testcase name="@AfterClass afterClass" time="0.0" classname="com.qaselenium.CopyOfNewTest">
+    <failure type="com.thoughtworks.selenium.SeleniumException" message="ERROR: Current window or frame is closed!">
+      <![CDATA[com.thoughtworks.selenium.SeleniumException: ERROR: Current window or frame is closed!
+	at com.thoughtworks.selenium.HttpCommandProcessor.throwAssertionFailureExceptionOrError(HttpCommandProcessor.java:112)
+	at com.thoughtworks.selenium.HttpCommandProcessor.doCommand(HttpCommandProcessor.java:106)
+	at com.thoughtworks.selenium.DefaultSelenium.close(DefaultSelenium.java:420)
+	at com.qaselenium.CopyOfNewTest.afterClass(CopyOfNewTest.java:27)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+... Removed 17 stack frames]]>
+    </failure>
+  </testcase>
+  <testcase name="testGoogleSearch" time="15.784" classname="com.qaselenium.CopyOfNewTest"/>
+</testsuite>

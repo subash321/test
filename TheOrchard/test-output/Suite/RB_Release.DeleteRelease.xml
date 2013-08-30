@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite hostname="vnvpc130" name="RB_Release.DeleteRelease" tests="1" failures="0" timestamp="26 Jun 2012 15:32:09 GMT" time="2.678" errors="0">
+  <testcase name="@BeforeClass loginUser" time="0.0" classname="RB_Release.DeleteRelease">
+    <failure type="java.lang.RuntimeException" message="Could not start Selenium session: ERROR: Could not find any remote control providing the &amp;apos;*firefox&amp;apos; environment. Please make sure you started some remote controls which registered as offering this environment.">
+      <![CDATA[java.lang.RuntimeException: Could not start Selenium session: ERROR: Could not find any remote control providing the '*firefox' environment. Please make sure you started some remote controls which registered as offering this environment.
+	at com.thoughtworks.selenium.DefaultSelenium.start(DefaultSelenium.java:107)
+	at FunctionLibrary.Common.CsetUp(Common.java:381)
+	at RB_Release.DeleteRelease.loginUser(DeleteRelease.java:14)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: com.thoughtworks.selenium.SeleniumException: ERROR: Could not find any remote control providing the '*firefox' environment. Please make sure you started some remote controls which registered as offering this environment.
+	at com.thoughtworks.selenium.HttpCommandProcessor.throwAssertionFailureExceptionOrError(HttpCommandProcessor.java:112)
+	at com.thoughtworks.selenium.HttpCommandProcessor.doCommand(HttpCommandProcessor.java:106)
+	at com.thoughtworks.selenium.HttpCommandProcessor.getString(HttpCommandProcessor.java:275)
+	at com.thoughtworks.selenium.HttpCommandProcessor.start(HttpCommandProcessor.java:237)
+	at com.thoughtworks.selenium.DefaultSelenium.start(DefaultSelenium.java:98)
+	... 22 more
+... Removed 17 stack frames]]>
+    </failure>
+  </testcase>
+  <testcase name="@AfterClass afterClass" time="0.0" classname="RB_Release.DeleteRelease">
+    <skipped/>
+  </testcase>
+  <testcase name="userLogin" time="0.0" classname="RB_Release.DeleteRelease">
+    <skipped/>
+  </testcase>
+</testsuite>

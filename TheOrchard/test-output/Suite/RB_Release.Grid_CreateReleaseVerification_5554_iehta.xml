@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite hostname="vnvpc130" name="RB_Release.Grid_CreateReleaseVerification" tests="1" failures="1" timestamp="4 Jul 2012 15:44:37 GMT" time="77.61" errors="0">
+  <testcase name="testGoogleSearch" time="49.132" classname="RB_Release.Grid_CreateReleaseVerification">
+    <failure type="com.thoughtworks.selenium.SeleniumException" message="ERROR: Element //ul[@id=&amp;apos;dropdown&amp;apos;]/li not found">
+      <![CDATA[com.thoughtworks.selenium.SeleniumException: ERROR: Element //ul[@id='dropdown']/li not found
+	at com.thoughtworks.selenium.HttpCommandProcessor.throwAssertionFailureExceptionOrError(HttpCommandProcessor.java:112)
+	at com.thoughtworks.selenium.HttpCommandProcessor.doCommand(HttpCommandProcessor.java:106)
+	at com.thoughtworks.selenium.DefaultSelenium.click(DefaultSelenium.java:186)
+	at RB_Release.Grid_CreateReleaseVerification.testGoogleSearch(Grid_CreateReleaseVerification.java:67)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+... Removed 17 stack frames]]>
+    </failure>
+  </testcase>
+</testsuite>

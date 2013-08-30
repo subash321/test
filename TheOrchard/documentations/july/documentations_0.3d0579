@@ -1,0 +1,42 @@
+discussed the ticket related doub
+I have received the tasks from QA Team Lead
+http://jira.theorchard.com/browse/MARKETING-619
+I have received the tasks from Namrata Development Team[The Orchard] by Mail
+http://jira.theorchard.com/browse/MARKETING-667
+we tested the John Dupre added a comment - 27/Jul/12 10:23 AM
+test URL : http://marketingapi.synergy.theorchard.com/alw/artist/index/
+We have verified the AB home page on URL http://marketingapi.synergy.theorchard.com/alw/artist/index/ and now Artist Name on AB home page is changed as "Profile"
+All form fields are required
+First Name 	Last Name 	Email 	Contact Type 	Delete 
+if no contacts > ok what should being the output
+First Name can not be empty
+Last Name can not be empty
+in the view contacts page the other contact type except the Custom contacts displayed with the label CONTACT
+
+Reported the Status of the QA Testing for the Below Mentioned Jira Tickets to the Marketing Development Team
+MARKETING-619
+MARKETING-667
+
+Reported the Today's Tasks to the QA Team Lead
+
+Performed the Manual testing for the above mentioned Jira Tickets
+
+The below task we Received from QA Team Lead
+http://jira.theorchard.com/browse/MARKETING-619
+test URL : http://marketingapi.synergy.theorchard.com/alw/artist/index/
+here we tested the John Dupre added a comment - 27/Jul/12 10:23 AM as I discussed with Development Team
+
+I got Mail from Namrata patel for the below task
+http://jira.theorchard.com/browse/MARKETING-667
+test URL
+http://epk.synergy.theorchard.com/en/epk/presskit/view/1126#contactsForm 
+
+we have updated the bulk updater IDE test cases on url "http://internal.alpha.theorchard.com/oa"
+
+we have put the updated test case on the below path of the Pdrive
+
+"P:\TheOrchard\Selenium\Internal_Tools\IT Sprint August 1 2012\Selenium IDE Test Cases"
+
+added the comments for the above mentioned Jira Tickets
+
+ 

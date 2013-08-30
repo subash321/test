@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite hostname="vnvpc130" name="RB_Release.Grid_CreateRelease" tests="1" failures="1" timestamp="27 Jun 2012 12:50:05 GMT" time="58.508" errors="0">
+  <testcase name="testGoogleSearch" time="27.036" classname="RB_Release.Grid_CreateRelease">
+    <failure type="com.thoughtworks.selenium.SeleniumException" message="Timed out after 25000ms">
+      <![CDATA[com.thoughtworks.selenium.SeleniumException: Timed out after 25000ms
+	at com.thoughtworks.selenium.HttpCommandProcessor.throwAssertionFailureExceptionOrError(HttpCommandProcessor.java:112)
+	at com.thoughtworks.selenium.HttpCommandProcessor.doCommand(HttpCommandProcessor.java:106)
+	at com.thoughtworks.selenium.DefaultSelenium.waitForPageToLoad(DefaultSelenium.java:671)
+	at RB_Release.Grid_CreateRelease.testGoogleSearch(Grid_CreateRelease.java:45)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+... Removed 17 stack frames]]>
+    </failure>
+  </testcase>
+</testsuite>

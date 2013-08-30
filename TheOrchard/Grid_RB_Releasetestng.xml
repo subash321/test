@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite" parallel="tests">
+    <test name="RB_Release.Grid_CreateRelease/5553/iehta">
+     <listeners>  
+<listener class-name="org.uncommons.reportng.HTMLReporter"></listener>  
+</listeners>
+        <parameter name="selenium.host" value="localhost"></parameter>
+        <parameter name="selenium.port" value="5551"></parameter>
+        <parameter name="selenium.browser" value="*safari"></parameter>
+        <parameter name="selenium.url" value="http://internal.alpha.theorchard.com"></parameter>
+        <parameter name="searchCriteria" value="SeleniumGrid_03"></parameter>
+        <classes>
+            <class name="RB_Release.Grid_CreateReleaseVerification"/>
+        </classes>
+    </test> 
+       <test name="RB_Release.Grid_CreateRelease/5553/iehta">
+     <listeners>  
+<listener class-name="org.uncommons.reportng.HTMLReporter"></listener>  
+</listeners>
+        <parameter name="selenium.host" value="localhost"></parameter>
+        <parameter name="selenium.port" value="5552"></parameter>
+        <parameter name="selenium.browser" value="*safari"></parameter>
+        <parameter name="selenium.url" value="http://trunk.alpha.theorchard.com"></parameter>
+        <parameter name="searchCriteria" value="SeleniumGrid_03"></parameter>
+        <classes>
+            <class name="RB_Release.Grid_CreateRelease"/>
+        </classes>
+    </test> 
+          <test name="RB_Release.Grid_CreateRelease/5553/iehta">
+     <listeners>  
+<listener class-name="org.uncommons.reportng.HTMLReporter"></listener>  
+</listeners>
+        <parameter name="selenium.host" value="localhost"></parameter>
+        <parameter name="selenium.port" value="5553"></parameter>
+        <parameter name="selenium.browser" value="*safari"></parameter>
+        <parameter name="selenium.url" value="http://internal.alpha.theorchard.com"></parameter>
+        <parameter name="searchCriteria" value="SeleniumGrid_03"></parameter>
+        <classes>
+            <class name="RB_Release.Grid_EditRelease"/>
+        </classes>
+    </test> 
+         <test name="RB_Release.Grid_CreateRelease/5553/iehta">
+     <listeners>  
+<listener class-name="org.uncommons.reportng.HTMLReporter"></listener>  
+</listeners>
+        <parameter name="selenium.host" value="localhost"></parameter>
+        <parameter name="selenium.port" value="5554"></parameter>
+        <parameter name="selenium.browser" value="*safari"></parameter>
+        <parameter name="selenium.url" value="http://internal.alpha.theorchard.com"></parameter>
+        <parameter name="searchCriteria" value="SeleniumGrid_03"></parameter>
+        <classes>
+            <class name="RB_Release.Grid_DeleteRelease"/>
+        </classes>
+    </test> 
+</suite>

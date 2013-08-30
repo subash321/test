@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite hostname="vnvpc130" name="RB_Release.Grid_CreateRelease" tests="1" failures="1" timestamp="6 Jul 2012 12:00:01 GMT" time="255.362" errors="0">
+  <testcase name="@AfterClass afterClass" time="0.0" classname="RB_Release.Grid_CreateRelease">
+    <failure type="com.thoughtworks.selenium.SeleniumException" message="Connection refused: connect">
+      <![CDATA[com.thoughtworks.selenium.SeleniumException: Connection refused: connect
+	at com.thoughtworks.selenium.HttpCommandProcessor.executeCommandOnServlet(HttpCommandProcessor.java:121)
+	at com.thoughtworks.selenium.HttpCommandProcessor.doCommand(HttpCommandProcessor.java:101)
+	at com.thoughtworks.selenium.DefaultSelenium.close(DefaultSelenium.java:420)
+	at RB_Release.Grid_CreateRelease.afterClass(Grid_CreateRelease.java:32)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: java.net.ConnectException: Connection refused: connect
+	at java.net.TwoStacksPlainSocketImpl.socketConnect(Native Method)
+	at java.net.AbstractPlainSocketImpl.doConnect(Unknown Source)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(Unknown Source)
+	at java.net.AbstractPlainSocketImpl.connect(Unknown Source)
+	at java.net.PlainSocketImpl.connect(Unknown Source)
+	at java.net.SocksSocketImpl.connect(Unknown Source)
+	at java.net.Socket.connect(Unknown Source)
+	at java.net.Socket.connect(Unknown Source)
+	at sun.net.NetworkClient.doConnect(Unknown Source)
+	at sun.net.www.http.HttpClient.openServer(Unknown Source)
+	at sun.net.www.http.HttpClient.openServer(Unknown Source)
+	at sun.net.www.http.HttpClient.<init>(Unknown Source)
+	at sun.net.www.http.HttpClient.New(Unknown Source)
+	at sun.net.www.http.HttpClient.New(Unknown Source)
+	at sun.net.www.protocol.http.HttpURLConnection.getNewHttpClient(Unknown Source)
+	at sun.net.www.protocol.http.HttpURLConnection.plainConnect(Unknown Source)
+	at sun.net.www.protocol.http.HttpURLConnection.connect(Unknown Source)
+	at sun.net.www.protocol.http.HttpURLConnection.getOutputStream(Unknown Source)
+	at com.thoughtworks.selenium.HttpCommandProcessor.getOutputStreamWriter(HttpCommandProcessor.java:149)
+	at com.thoughtworks.selenium.HttpCommandProcessor.getCommandResponseAsString(HttpCommandProcessor.java:176)
+	at com.thoughtworks.selenium.HttpCommandProcessor.executeCommandOnServlet(HttpCommandProcessor.java:118)
+	... 23 more
+... Removed 17 stack frames]]>
+    </failure>
+  </testcase>
+  <testcase name="testGoogleSearch" time="244.554" classname="RB_Release.Grid_CreateRelease">
+    <failure type="java.lang.AssertionError" message="timeout">
+      <![CDATA[java.lang.AssertionError: timeout
+	at com.thoughtworks.selenium.SeleneseTestBase.fail(SeleneseTestBase.java:391)
+	at RB_Release.Grid_CreateRelease.testGoogleSearch(Grid_CreateRelease.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+... Removed 17 stack frames]]>
+    </failure>
+  </testcase>
+</testsuite>

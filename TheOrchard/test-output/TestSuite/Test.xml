@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite hostname="vnvpc87" name="Login.Login" tests="1" failures="0" timestamp="27 Feb 2013 10:12:58 GMT" time="35.61" errors="0">
+  <testcase name="@BeforeClass loginUser" time="0.0" classname="Login.Login">
+    <failure type="java.lang.RuntimeException" message="Could not start Selenium session: Failed to start new browser session: Error while launching browser">
+      <![CDATA[java.lang.RuntimeException: Could not start Selenium session: Failed to start new browser session: Error while launching browser
+	at com.thoughtworks.selenium.DefaultSelenium.start(DefaultSelenium.java:107)
+	at FunctionLibrary.Common.CsetUp(Common.java:381)
+	at Login.Login.loginUser(Login.java:21)
+Caused by: com.thoughtworks.selenium.SeleniumException: Failed to start new browser session: Error while launching browser
+	at com.thoughtworks.selenium.HttpCommandProcessor.throwAssertionFailureExceptionOrError(HttpCommandProcessor.java:112)
+	at com.thoughtworks.selenium.HttpCommandProcessor.doCommand(HttpCommandProcessor.java:106)
+	at com.thoughtworks.selenium.HttpCommandProcessor.getString(HttpCommandProcessor.java:275)
+	at com.thoughtworks.selenium.HttpCommandProcessor.start(HttpCommandProcessor.java:237)
+	at com.thoughtworks.selenium.DefaultSelenium.start(DefaultSelenium.java:98)
+	... 26 more
+... Removed 24 stack frames]]>
+    </failure>
+  </testcase>
+  <testcase name="@AfterClass afterClass" time="0.0" classname="Login.Login">
+    <skipped/>
+  </testcase>
+  <testcase name="userLogin" time="0.0" classname="Login.Login">
+    <skipped/>
+  </testcase>
+</testsuite>

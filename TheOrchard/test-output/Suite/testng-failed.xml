@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Suite]" parallel="tests">
+  <parameter name="selenium.url" value="http://trunk.synergy.theorchard.com"/>
+  <parameter name="selenium.browser" value="*safari"/>
+  <parameter name="searchCriteria" value="SeleniumGrid_01"/>
+  <parameter name="selenium.port" value="5551"/>
+  <parameter name="selenium.host" value="localhost"/>
+  <listeners>
+    <listener class-name="org.uncommons.reportng.HTMLReporter"/>
+  </listeners>
+  <test name="01(failed)" parallel="tests" preserve-order="false">
+    <parameter name="selenium.url" value="http://trunk.synergy.theorchard.com"/>
+    <parameter name="selenium.browser" value="*safari"/>
+    <parameter name="searchCriteria" value="SeleniumGrid_01"/>
+    <parameter name="selenium.port" value="5551"/>
+    <parameter name="selenium.host" value="localhost"/>
+    <classes>
+      <class name="Login.Grid_Login">
+        <methods>
+          <include name="beforeClass"/>
+          <include name="testGoogleSearch"/>
+        </methods>
+      </class>
+    </classes>
+  </test>
+</suite>

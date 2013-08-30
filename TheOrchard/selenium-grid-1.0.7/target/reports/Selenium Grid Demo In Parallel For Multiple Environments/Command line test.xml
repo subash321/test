@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Command line test" failures="3" tests="3" time="0.343" errors="0">
+  <properties/>
+  <testcase name="testForFirstEnvironment" time="0.171" classname="com.thoughtworks.selenium.grid.demo.WebTestInvolvingMultiEnvironments">
+    <failure type="java.lang.RuntimeException" message="Could not start Selenium session: ERROR: Could not find any remote control providing the &apos;Firefox on Windows&apos; environment. Please make sure you started some remote controls which registered as offering this environment.">
+      <![CDATA[java.lang.RuntimeException: Could not start Selenium session: ERROR: Could not find any remote control providing the 'Firefox on Windows' environment. Please make sure you started some remote controls which registered as offering this environment.
+	at com.thoughtworks.selenium.DefaultSelenium.start(DefaultSelenium.java:89)
+	at com.thoughtworks.selenium.grid.tools.ThreadSafeSeleniumSessionStorage.startSeleniumSession(ThreadSafeSeleniumSessionStorage.java:26)
+	at com.thoughtworks.selenium.grid.demo.WebTestInvolvingMultiEnvironments.testForFirstEnvironment(WebTestInvolvingMultiEnvironments.java:28)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1110)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:603)
+	at java.lang.Thread.run(Thread.java:722)
+Caused by: com.thoughtworks.selenium.SeleniumException: ERROR: Could not find any remote control providing the 'Firefox on Windows' environment. Please make sure you started some remote controls which registered as offering this environment.
+	at com.thoughtworks.selenium.HttpCommandProcessor.throwAssertionFailureExceptionOrError(HttpCommandProcessor.java:97)
+	at com.thoughtworks.selenium.HttpCommandProcessor.doCommand(HttpCommandProcessor.java:91)
+	at com.thoughtworks.selenium.HttpCommandProcessor.getString(HttpCommandProcessor.java:262)
+	at com.thoughtworks.selenium.HttpCommandProcessor.start(HttpCommandProcessor.java:223)
+	at com.thoughtworks.selenium.DefaultSelenium.start(DefaultSelenium.java:81)
+	... 16 more
+... Removed 11 stack frames]]>
+    </failure>
+  </testcase>
+  <testcase name="testForSecondEnvironment" time="0.187" classname="com.thoughtworks.selenium.grid.demo.WebTestInvolvingMultiEnvironments">
+    <failure type="java.lang.RuntimeException" message="Could not start Selenium session: ERROR: Could not find any remote control providing the &apos;Firefox on Windows&apos; environment. Please make sure you started some remote controls which registered as offering this environment.">
+      <![CDATA[java.lang.RuntimeException: Could not start Selenium session: ERROR: Could not find any remote control providing the 'Firefox on Windows' environment. Please make sure you started some remote controls which registered as offering this environment.
+	at com.thoughtworks.selenium.DefaultSelenium.start(DefaultSelenium.java:89)
+	at com.thoughtworks.selenium.grid.tools.ThreadSafeSeleniumSessionStorage.startSeleniumSession(ThreadSafeSeleniumSessionStorage.java:26)
+	at com.thoughtworks.selenium.grid.demo.WebTestInvolvingMultiEnvironments.testForSecondEnvironment(WebTestInvolvingMultiEnvironments.java:39)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1110)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:603)
+	at java.lang.Thread.run(Thread.java:722)
+Caused by: com.thoughtworks.selenium.SeleniumException: ERROR: Could not find any remote control providing the 'Firefox on Windows' environment. Please make sure you started some remote controls which registered as offering this environment.
+	at com.thoughtworks.selenium.HttpCommandProcessor.throwAssertionFailureExceptionOrError(HttpCommandProcessor.java:97)
+	at com.thoughtworks.selenium.HttpCommandProcessor.doCommand(HttpCommandProcessor.java:91)
+	at com.thoughtworks.selenium.HttpCommandProcessor.getString(HttpCommandProcessor.java:262)
+	at com.thoughtworks.selenium.HttpCommandProcessor.start(HttpCommandProcessor.java:223)
+	at com.thoughtworks.selenium.DefaultSelenium.start(DefaultSelenium.java:81)
+	... 16 more
+... Removed 11 stack frames]]>
+    </failure>
+  </testcase>
+  <testcase name="testForThirdEnvironment" time="0.187" classname="com.thoughtworks.selenium.grid.demo.WebTestInvolvingMultiEnvironments">
+    <failure type="java.lang.RuntimeException" message="Could not start Selenium session: ERROR: Could not find any remote control providing the &apos;Firefox on OS X&apos; environment. Please make sure you started some remote controls which registered as offering this environment.">
+      <![CDATA[java.lang.RuntimeException: Could not start Selenium session: ERROR: Could not find any remote control providing the 'Firefox on OS X' environment. Please make sure you started some remote controls which registered as offering this environment.
+	at com.thoughtworks.selenium.DefaultSelenium.start(DefaultSelenium.java:89)
+	at com.thoughtworks.selenium.grid.tools.ThreadSafeSeleniumSessionStorage.startSeleniumSession(ThreadSafeSeleniumSessionStorage.java:26)
+	at com.thoughtworks.selenium.grid.demo.WebTestInvolvingMultiEnvironments.testForThirdEnvironment(WebTestInvolvingMultiEnvironments.java:50)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1110)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:603)
+	at java.lang.Thread.run(Thread.java:722)
+Caused by: com.thoughtworks.selenium.SeleniumException: ERROR: Could not find any remote control providing the 'Firefox on OS X' environment. Please make sure you started some remote controls which registered as offering this environment.
+	at com.thoughtworks.selenium.HttpCommandProcessor.throwAssertionFailureExceptionOrError(HttpCommandProcessor.java:97)
+	at com.thoughtworks.selenium.HttpCommandProcessor.doCommand(HttpCommandProcessor.java:91)
+	at com.thoughtworks.selenium.HttpCommandProcessor.getString(HttpCommandProcessor.java:262)
+	at com.thoughtworks.selenium.HttpCommandProcessor.start(HttpCommandProcessor.java:223)
+	at com.thoughtworks.selenium.DefaultSelenium.start(DefaultSelenium.java:81)
+	... 16 more
+... Removed 11 stack frames]]>
+    </failure>
+  </testcase>
+</testsuite>

@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite hostname="vnvpc130" name="com.qaselenium.CopyOfNewTest" tests="1" failures="0" timestamp="20 Jun 2012 10:23:44 GMT" time="40.537" errors="0">
+  <testcase name="testGoogleSearch" time="16.79" classname="com.qaselenium.CopyOfNewTest"/>
+</testsuite>

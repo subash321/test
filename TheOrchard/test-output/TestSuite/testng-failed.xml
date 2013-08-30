@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [TestSuite]" parallel="none">
+  <listeners>
+    <listener class-name="org.uncommons.reportng.HTMLReporter"/>
+  </listeners>
+  <test name="Test(failed)" parallel="none" preserve-order="false">
+    <classes>
+      <class name="Login.Login">
+        <methods>
+          <include name="userLogin"/>
+          <include name="loginUser"/>
+        </methods>
+      </class>
+    </classes>
+  </test>
+</suite>

@@ -1,0 +1,32 @@
+<suite name="Suite" parallel="tests">
+    <test name="Firefox">
+        <parameter name="selenium.host" value="localhost"></parameter>
+        <parameter name="selenium.port" value="5556"></parameter>
+        <parameter name="selenium.browser" value="*firefox"></parameter>
+        <parameter name="selenium.url" value="http://www.google.com"></parameter>
+        <parameter name="searchCriteria" value="SeleniumGrid"></parameter>
+        <classes>
+            <class name="com.qaselenium.NewTest" />
+        </classes>
+    </test>
+    <test name="Internet Explorer">
+        <parameter name="selenium.host" value="localhost"></parameter>
+        <parameter name="selenium.port" value="5557"></parameter>
+                <parameter name="selenium.browser" value="*iehta"></parameter>
+        <parameter name="selenium.url" value="http://www.google.com"></parameter>
+        <parameter name="searchCriteria" value="TestNG"></parameter>
+        <classes>
+            <class name="com.qaselenium.NewTest" />
+        </classes>
+    </test>
+    <test name="Google Chrome">
+        <parameter name="selenium.host" value="localhost"></parameter>
+        <parameter name="selenium.port" value="5558"></parameter>
+                <parameter name="selenium.browser" value="*googlechrome"></parameter>
+        <parameter name="selenium.url" value="http://www.google.com"></parameter>
+        <parameter name="searchCriteria" value="TestNG"></parameter>
+        <classes>
+            <class name="com.qaselenium.NewTest" />
+        </classes>
+    </test>
+</suite>

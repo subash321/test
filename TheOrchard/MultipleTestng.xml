@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite" parallel="tests">
+
+<test name="Login.Grid_Login/5551/iehta">
+     <listeners>  
+<listener class-name="org.uncommons.reportng.HTMLReporter"></listener>  
+</listeners>
+        <parameter name="selenium.host" value="localhost"></parameter>
+        <parameter name="selenium.port" value="5551"></parameter>
+        <parameter name="selenium.browser" value="*iehta"></parameter>
+        <parameter name="selenium.url" value="http://trunk.synergy.theorchard.com"></parameter>
+        <parameter name="searchCriteria" value="SeleniumGrid_01"></parameter>
+        <classes>
+            <class name="Login.Grid_Login"/>
+        </classes>
+    </test>
+    
+    <test name="Login.Grid_LoginVerification/5552/iehta">
+     <listeners>  
+<listener class-name="org.uncommons.reportng.HTMLReporter"></listener>  
+</listeners>
+        <parameter name="selenium.host" value="localhost"></parameter>
+        <parameter name="selenium.port" value="5552"></parameter>
+        <parameter name="selenium.browser" value="*iehta"></parameter>
+        <parameter name="selenium.url" value="http://trunk.synergy.theorchard.com"></parameter>
+        <parameter name="searchCriteria" value="SeleniumGrid_02"></parameter>
+        <classes>
+            <class name="Login.Grid_LoginVerification"/>
+        </classes>
+    </test>
+    
+    <test name="RB_Release.Grid_CreateRelease/5553/iehta">
+     <listeners>  
+<listener class-name="org.uncommons.reportng.HTMLReporter"></listener>  
+</listeners>
+        <parameter name="selenium.host" value="localhost"></parameter>
+        <parameter name="selenium.port" value="5553"></parameter>
+        <parameter name="selenium.browser" value="*iehta"></parameter>
+        <parameter name="selenium.url" value="http://trunk.synergy.theorchard.com"></parameter>
+        <parameter name="searchCriteria" value="SeleniumGrid_03"></parameter>
+        <classes>
+            <class name="RB_Release.Grid_CreateRelease"/>
+        </classes>
+    </test>
+            <test name="RB_Release.Grid_CreateReleaseVerification/5554/iehta">
+     <listeners>  
+<listener class-name="org.uncommons.reportng.HTMLReporter"></listener>  
+</listeners>
+        <parameter name="selenium.host" value="localhost"></parameter>
+        <parameter name="selenium.port" value="5554"></parameter>
+        <parameter name="selenium.browser" value="*iehta"></parameter>
+        <parameter name="selenium.url" value="http://trunk.synergy.theorchard.com"></parameter>
+        <parameter name="searchCriteria" value="SeleniumGrid_01"></parameter>
+        <classes>
+            <class name="RB_Release.Grid_CreateReleaseVerification"/>
+        </classes>
+    </test>
+ 
+
+    <test name="RB_Release.Grid_EditRelease/5555/iehta">
+     <listeners>  
+<listener class-name="org.uncommons.reportng.HTMLReporter"></listener>  
+</listeners>
+        <parameter name="selenium.host" value="localhost"></parameter>
+        <parameter name="selenium.port" value="5555"></parameter>
+        <parameter name="selenium.browser" value="*iehta"></parameter>
+        <parameter name="selenium.url" value="http://trunk.synergy.theorchard.com"></parameter>
+        <parameter name="searchCriteria" value="SeleniumGrid_01"></parameter>
+        <classes>
+            <class name="RB_Release.Grid_EditRelease"/>
+        </classes>
+    </test>
+        <test name="RB_Release.Grid_DeleteRelease/5556/iehta">
+     <listeners>  
+<listener class-name="org.uncommons.reportng.HTMLReporter"></listener>  
+</listeners>
+        <parameter name="selenium.host" value="localhost"></parameter>
+        <parameter name="selenium.port" value="5556"></parameter>
+        <parameter name="selenium.browser" value="*iehta"></parameter>
+        <parameter name="selenium.url" value="http://trunk.synergy.theorchard.com"></parameter>
+        <parameter name="searchCriteria" value="SeleniumGrid_01"></parameter>
+        <classes>
+            <class name="RB_Release.Grid_DeleteRelease"/>
+        </classes>
+    </test>
+
+</suite>

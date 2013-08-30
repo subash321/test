@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite hostname="vnvpc130" name="Login.Grid_Login" tests="1" failures="0" timestamp="2 Jul 2012 09:54:15 GMT" time="68.807" errors="0">
+  <testcase name="testGoogleSearch" time="48.405" classname="Login.Grid_Login"/>
+</testsuite>

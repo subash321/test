@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite" parallel="tests">
+<test name="01">
+     <listeners>  
+<listener class-name="org.uncommons.reportng.HTMLReporter"></listener>  
+</listeners>
+        <parameter name="selenium.host" value="localhost"></parameter>
+        <parameter name="selenium.port" value="5551"></parameter>
+        <parameter name="selenium.browser" value="*safari"></parameter>
+        <parameter name="selenium.url" value="http://www.google.com/"></parameter>
+        <parameter name="searchCriteria" value="SeleniumGrid_01"></parameter>
+        <classes>
+            <class name="com.qaselenium.NewTest" />
+        </classes>
+    </test>
+    <test name="02">
+         <listeners>  
+<listener class-name="org.uncommons.reportng.HTMLReporter"></listener>  
+</listeners>
+        <parameter name="selenium.host" value="localhost"></parameter>
+        <parameter name="selenium.port" value="5552"></parameter>
+        <parameter name="selenium.browser" value="*googlechrome"></parameter>
+        <parameter name="selenium.url" value="http://www.google.co.in"></parameter>
+        <parameter name="searchCriteria" value="SeleniumGrid_02"></parameter>
+        <classes>
+            <class name="com.qaselenium.NewTest" />
+        </classes>
+    </test>
+    <test name="03">
+         <listeners>  
+<listener class-name="org.uncommons.reportng.HTMLReporter"></listener>  
+</listeners>
+        <parameter name="selenium.host" value="localhost"></parameter>
+        <parameter name="selenium.port" value="5553"></parameter>
+        <parameter name="selenium.browser" value="*iehta"></parameter>
+        <parameter name="selenium.url" value="http://www.google.com/"></parameter>
+        <parameter name="searchCriteria" value="SeleniumGrid_03"></parameter>
+        <classes>
+            <class name="com.qaselenium.NewTest" />
+        </classes>
+    </test>
+    <test name="04">
+         <listeners>  
+<listener class-name="org.uncommons.reportng.HTMLReporter"></listener>  
+</listeners>
+        <parameter name="selenium.host" value="localhost"></parameter>
+        <parameter name="selenium.port" value="5554"></parameter>
+        <parameter name="selenium.browser" value="*firefox2"></parameter>
+        <parameter name="selenium.url" value="http://www.google.com/"></parameter>
+        <parameter name="searchCriteria" value="SeleniumGrid_04"></parameter>
+        <classes>
+            <class name="com.qaselenium.NewTest" />
+        </classes>
+    </test>
+    <test name="05">
+         <listeners>  
+<listener class-name="org.uncommons.reportng.HTMLReporter"></listener>  
+</listeners>
+        <parameter name="selenium.host" value="localhost"></parameter>
+        <parameter name="selenium.port" value="5555"></parameter>
+        <parameter name="selenium.browser" value="*iehta"></parameter>
+        <parameter name="selenium.url" value="http://www.google.com/"></parameter>
+        <parameter name="searchCriteria" value="SeleniumGrid_05"></parameter>
+        <classes>
+            <class name="com.qaselenium.NewTest" />
+        </classes>
+    </test>
+    <test name="06">
+         <listeners>  
+<listener class-name="org.uncommons.reportng.HTMLReporter"></listener>  
+</listeners>
+        <parameter name="selenium.host" value="localhost"></parameter>
+        <parameter name="selenium.port" value="5556"></parameter>
+                <parameter name="selenium.browser" value="*iehta"></parameter>
+        <parameter name="selenium.url" value="http://www.google.com/"></parameter>
+        <parameter name="searchCriteria" value="SeleniumGrid_06"></parameter>
+        <classes>
+            <class name="com.qaselenium.NewTest" />
+        </classes>
+    </test>
+    <test name="07">
+         <listeners>  
+<listener class-name="org.uncommons.reportng.HTMLReporter"></listener>  
+</listeners>
+        <parameter name="selenium.host" value="localhost"></parameter>
+        <parameter name="selenium.port" value="5557"></parameter>
+                <parameter name="selenium.browser" value="*iehta"></parameter>
+        <parameter name="selenium.url" value="http://www.google.com/"></parameter>
+        <parameter name="searchCriteria" value="SeleniumGrid_07"></parameter>
+        <classes>
+            <class name="com.qaselenium.NewTest" />
+        </classes>
+    </test>
+</suite>
